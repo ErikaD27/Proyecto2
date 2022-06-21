@@ -28,20 +28,37 @@
 }
 
 .Contenedor .menu{
-  float: right;
-  line-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  line-height: 10px;
+  text-align: center;
 }
 .Contenedor .menu a{
   display: inline-block;
-  padding: 15px;
+  padding: 8px;
   line-height: normal;
   text-decoration: none;
   color: black;
   transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
-  font-size: 15px;
-  margin-right: 5px;
+  border-bottom: 1px solid gray;
+  font-size: 13px;
+  margin-right: 2px;
 }
+
+#search{
+  /* display: inline-block;
+  padding: 18px;
+  line-height: normal;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid gray;
+  font-size: 13px; */
+  margin-top: 15px;
+}
+
 .Contenedor .menu a:hover{
   border-bottom: 2px solid #c7c7c7;
   padding-bottom: 5px;
@@ -61,7 +78,7 @@
 
 }
 .sidebar{
-  width: 300px;
+  width: 200px;
   height: 100%;
   background-color: gray;
   
