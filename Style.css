@@ -3,17 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+
+  flex-direction: column;
+  
+  /* border: solid black; */
+}
 .Encabezado{
   width: 100%;
   height: 100px;
   position: fixed;
   top: 0;left: 0;
+  /* border: solid; */
+ 
 }
 
 .Contenedor{
   width: 90%;
   max-width: 1200px;
   margin: auto;
+ 
 }
 
 .Contenedor .btn-menu, .logo{
@@ -48,14 +64,6 @@
 }
 
 #search{
-  /* display: inline-block;
-  padding: 18px;
-  line-height: normal;
-  text-decoration: none;
-  color: black;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid gray;
-  font-size: 13px; */
   margin-top: 15px;
 }
 
@@ -65,6 +73,8 @@
 }
 .container{
   position: fixed;
+  align-items: flex-start;
+  margin-left: 0;
   height: 100%;
   overflow: auto;
   transition:1s ease;
@@ -156,4 +166,44 @@ button{
 }
 #btn-menu{
   display: none;
+}
+
+.ContVideo{
+  margin-top: 120px;
+  width: 100vw;
+  height: 150vh;
+  border: 1px solid ;
+  display:grid;
+  
+  grid-template-areas:
+   "item-1 item-2 item-3"
+   "item-1 item-4 item-5" 
+   "item-6 item-4 item-5"  
+   "item-6 item-7 item-8 " 
+   "item-9 item-9 item-10 " 
+   "item-9 item-9 item-11 "
+   "item-12 item-13 item-11 ";
+  grid-gap: 5px;
+}
+
+ 
+.ContVideo div{
+  border-radius: 10px;
+}
+.item-1{
+  grid-area: item-1;
+  background-color: pink;
+}
+
+.item-2{
+  grid-area: item-2;
+  background-color: pink;
+}
+.item-3{
+  grid-area: item-3;
+  background-color: rgb(46, 172, 204);
+}
+.item-4{
+  grid-area: item-4;
+  background-color: yellow;
 }
