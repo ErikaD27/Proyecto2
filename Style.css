@@ -177,8 +177,6 @@ button{
 
 .article {
   grid-area: article;
-  background-color: rgba(255, 0, 0, 0.525);
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
