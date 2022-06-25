@@ -19,14 +19,14 @@ body {
     "article";
   gap: 10px;
   
-  /* border: solid black; */
+  /* Encabezado */
 }
 .Encabezado{
   width: 100%;
   height: 100px;
   position: fixed;
   top: 0;left: 0;
-  /* border: solid; */
+  margin-top: 20px;
  
 }
 
@@ -37,17 +37,20 @@ body {
  
 }
 
+/* Ajuste de posicionamiento logo y del menú encabzado */
 .Contenedor .btn-menu, .logo{
   float: left;
   line-height:100px;
 }
 
+/* Ajuste del menú del encabezado */
 .Contenedor .btn-menu label{
   color: black;
   font-size: 25px;
   cursor: pointer;
 }
 
+/* Ajuste posicionamieno del menú del encabezado */
 .Contenedor .menu{
   display: flex;
   justify-content: space-around;
@@ -56,42 +59,56 @@ body {
   line-height: 10px;
   text-align: center;
 }
+/* Texto del menú de encabezado */
 .Contenedor .menu a{
   display: inline-block;
   padding: 8px;
   line-height: normal;
   text-decoration: none;
   color: black;
-  transition: all 0.3s ease;
+  font-weight: bold;
+  transition: 0.3s ease;
   border-bottom: 1px solid gray;
-  font-size: 13px;
+  font-size: 15px;
   margin-right: 2px;
 }
 
+/*´Posición barra de busqueda  */
 #search{
   margin-top: 15px;
 }
 
+/* aplicación del hover y ajuste del border de los botones del menú del encabezado */
 .Contenedor .menu a:hover{
-  border-bottom: 2px solid #c7c7c7;
-  padding-bottom: 5px;
+  border-bottom: 4px solid #c7c7c7;
+  padding-bottom: 15px;
 }
+
+/* Cierre encabezado */
+
+/* Inicio barra de opciones lateral */
+/* Ajuste de posición del contenedor */
 .container{
   position: fixed;
   align-items: flex-start;
   margin-left: 0;
   height: 100%;
   overflow: auto;
-  transition:1s ease;
+  transition:1.8s ease;
   opacity: 0;
   visibility: hidden;
+ 
 }
 
+/* Aparecer menú lateral con el click  en el ícono*/
+
 #btn-menu:checked ~ .container{
-  opacity: 1;
+  opacity: 10;
   visibility: visible;
 
 }
+
+/* fondo del sidebar y dimensiones */
 .sidebar{
   width: 200px;
   height: 100%;
@@ -102,13 +119,7 @@ body {
 }
 
 
-.sidebar img{
-  width: 130px;
-  display: block;
-  margin: 10px auto ;
-  
-  
-}
+/* Ajuste del ícono X para cerrar el sidebar */
 
 .side-hide{
   float:right;
@@ -118,17 +129,17 @@ body {
   font-size: 24px;
   cursor: pointer;
 } 
-
+/* Ajuste del padging opciones sidebar */
 .sidebar ul li{
   padding: 12px 22px;
 }
-
+/* Ajuste hover sidebar */
 .sidebar ul li:hover{
   background: #4e4e4e;
   cursor: pointer;
 
 }
-
+/* Ajuste letra sidebar */
 .sidebar ul li a{
   text-decoration: none;
   color: white;
@@ -136,51 +147,47 @@ body {
   font-family: sans-serif;
 
 }
-
-.content{
-  padding: 20px;
-  color:black;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: blueviolet; */
+/* Se ajusta el margen superior del inicio de la opciones */
+ul{
+  margin-top: 30px;
 }
 
-.content h2{
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-left: 290px;
-}
-
-.content p{
-  font-size:18px;
-  text-align: justify;
-  margin-left: 290px;
-}
+/* Ajuste de la selección en el sidebar */
 
 button{
   background-color: black;
   color: white;
-  padding: 5px 12px;
+  padding: 15px 12px;
   border:none;
   display: block;
-  border-radius: 15px;
+  
   cursor:pointer;
   margin-top: 20px;
   margin-left: 10px;
 }
+
+/* no mostrar sidebar si no se le da click al ícno  */
 #btn-menu{
   display: none;
 }
 
+/* Finaliza ajuste sidebar */
 
 
+
+/* Inicia ajuste videos */
+
+
+
+
+/* Ajuste posicionamiento de los videos con respecto al contenedor */
 .article {
+  margin-top: 40px;
   grid-area: article;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-
+  transition:1.8s ease;
   justify-content: center;
   align-items: center;
 
@@ -188,10 +195,6 @@ button{
   gap:50px
 }
 
-article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  border-radius: 20px;
-}
+
+/* Finaliza ajuste videos */
