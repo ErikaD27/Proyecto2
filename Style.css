@@ -9,10 +9,15 @@ body {
   height: 100vh;
 
   display: flex;
-  justify-content:flex-start;
+  justify-content:center;
   align-items: flex-start;
 
   flex-direction: column;
+  display: grid;
+  grid-template-areas:
+    "encabzado"
+    "article";
+  gap: 10px;
   
   /* border: solid black; */
 }
@@ -168,42 +173,27 @@ button{
   display: none;
 }
 
-.ContVideo{
-  margin-top: 120px;
-  width: 100vw;
-  height: 150vh;
-  border: 1px solid ;
-  display:grid;
-  
-  grid-template-areas:
-   "item-1 item-2 item-3"
-   "item-1 item-4 item-5" 
-   "item-6 item-4 item-5"  
-   "item-6 item-7 item-8 " 
-   "item-9 item-9 item-10 " 
-   "item-9 item-9 item-11 "
-   "item-12 item-13 item-11 ";
-  grid-gap: 5px;
+
+
+.article {
+  grid-area: article;
+  background-color: rgba(255, 0, 0, 0.525);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+  justify-content: center;
+  align-items: center;
+
+  align-content: space-evenly;
+  gap:50px
 }
 
- 
-.ContVideo div{
-  border-radius: 10px;
-}
-.item-1{
-  grid-area: item-1;
-  background-color: pink;
-}
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.item-2{
-  grid-area: item-2;
-  background-color: pink;
-}
-.item-3{
-  grid-area: item-3;
-  background-color: rgb(46, 172, 204);
-}
-.item-4{
-  grid-area: item-4;
-  background-color: yellow;
+  border-radius: 20px;
 }
