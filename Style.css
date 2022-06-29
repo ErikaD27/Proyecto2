@@ -10,30 +10,35 @@ body {
 
   display: flex;
   justify-content:center;
-  align-items: flex-start;
+  
 
   flex-direction: column;
   display: grid;
   grid-template-areas:
-    "encabzado"
-    "article";
+    "encabezado"
+    "article"
+    "footer";
   gap: 10px;
+  
+
   
   /* Encabezado */
 }
 .Encabezado{
   width: 100%;
-  height: 100px;
+  height: auto;
   position: fixed;
-  top: 0;left: 0;
-  margin-top: 20px;
+  margin-top: 30px;
+ 
  
 }
 
 .Contenedor{
-  width: 90%;
+  width: 80%;
   max-width: 1200px;
   margin: auto;
+
+  
  
 }
 
@@ -70,12 +75,13 @@ body {
   transition: 0.3s ease;
   border-bottom: 1px solid gray;
   font-size: 15px;
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
 /*´Posición barra de busqueda  */
 #search{
-  margin-top: 15px;
+  margin-top: 10px;
+  justify-content: center;
 }
 
 /* aplicación del hover y ajuste del border de los botones del menú del encabezado */
@@ -94,7 +100,7 @@ body {
   margin-left: 0;
   height: 100%;
   overflow: auto;
-  transition:1.8s ease;
+  transition:1.5s ease;
   opacity: 0;
   visibility: hidden;
  
@@ -181,20 +187,35 @@ button{
 
 
 /* Ajuste posicionamiento de los videos con respecto al contenedor */
+
 .article {
-  margin-top: 40px;
+  margin-top: 50px;
   grid-area: article;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  transition:1.8s ease;
+  transition:0.8s ease;
   justify-content: center;
   align-items: center;
-
-  align-content: space-evenly;
-  gap:50px
+  gap:40px;
+  align-content: space-around;
+  
 }
 
+/* Auste títulos de pie de video */
 
-
+H3{
+  font-size: medium;
+  text-align: center;
+}
 /* Finaliza ajuste videos */
+
+.footer {
+  grid-area: footer;
+  height: 100%;
+  background-color: #d02424;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
