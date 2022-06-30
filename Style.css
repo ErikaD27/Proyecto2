@@ -23,8 +23,8 @@ body {
   background-image: url("./Background.gif") ;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1000px 780px;
-  background-blend-mode: soft-light;
+  background-size: 1200px 560px;
+ 
  
 }
 
@@ -35,12 +35,11 @@ body {
   height: auto;
   position: fixed;
   margin-top: 30px;
- 
- 
+  
 }
 
 .Contenedor{
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
 
@@ -52,6 +51,7 @@ body {
 .Contenedor .btn-menu, .logo{
   float: left;
   line-height:100px;
+  
 }
 
 /* Ajuste del menú del encabezado */
@@ -93,7 +93,10 @@ body {
   margin:20px;
 
 }
-
+.notificaciones:hover{
+  border-bottom: 4px solid #e8ee2d;
+  padding-bottom: 15px;
+}
 
 /* aplicación del hover y ajuste del border de los botones del menú del encabezado */
 .Contenedor .menu a:hover{
@@ -106,13 +109,13 @@ body {
 /* Inicio barra de opciones lateral */
 /* Ajuste de posición del contenedor */
 .container{
-  position: fixed;
-  align-items: flex-start;
-  margin-left: 0;
+  position:fixed;
+
+  margin-left: 150px;
   height: 100%;
   overflow: auto;
-  transition:1.5s ease;
-  opacity: 0;
+  transition:1s ease;
+  opacity: 0.5;
   visibility: hidden;
  
 }
@@ -201,7 +204,8 @@ button{
 /* Ajuste posicionamiento de los videos con respecto al contenedor */
 
 .article {
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-left: 80px;
   grid-area: article;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -211,25 +215,34 @@ button{
   align-items: center;
   gap:40px;
   align-content: space-around;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
   
 }
 
 /* Auste títulos de pie de video */
-
+.artitem h3{
+  align-items: center;
+  justify-content: center;
+  margin: -10;
+}
 h3{
   font-size: medium;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 1px 1px 1px rgb(186, 16, 16);
+  text-shadow: 1px 1px 1px rgb(246, 241, 241);
+  margin-left: -75px;
 }
 /* Finaliza ajuste videos */
 
 .footer {
   grid-area: footer;
-  height: 80%;
+  height: 100%;
   background-color: #d02424;
   
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
 }
