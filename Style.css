@@ -8,8 +8,8 @@ body {
   width: 100vw;
   height: 100vh;
 
-  display: flex;
-  justify-content:center;
+  /* display: flex;
+  justify-content:center; */
   
 
   flex-direction: column;
@@ -17,13 +17,14 @@ body {
   grid-template-areas:
     "encabezado"
     "article"
+    "container"
     "footer";
   gap: 10px;
  
-  background-image: url("./Background.gif") ;
+  /* background-image: url("./Background.gif") ;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1200px 560px;
+  background-size: 1200px 560px; */
  
  
 }
@@ -35,12 +36,13 @@ body {
   height: auto;
   position: fixed;
   margin-top: 30px;
+  margin-left: 50px;
   
 }
 
 .Contenedor{
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
 
   
@@ -59,6 +61,7 @@ body {
   color: black;
   font-size: 25px;
   cursor: pointer;
+  
 }
 
 /* Ajuste posicionamieno del menú del encabezado */
@@ -77,11 +80,12 @@ body {
   line-height: normal;
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  
   transition: 0.3s ease;
   border-bottom: 1px solid gray;
   font-size: 15px;
   margin-right: 4px;
+  font-family: "Roboto","Arial",sans-serif;
 }
 
 /*´Posición barra de busqueda  */
@@ -109,14 +113,15 @@ body {
 /* Inicio barra de opciones lateral */
 /* Ajuste de posición del contenedor */
 .container{
-  position:fixed;
-
-  margin-left: 150px;
+  /* position:fixed; */
+ 
+  position: fixed;
   height: 100%;
   overflow: auto;
-  transition:1s ease;
+
   opacity: 0.5;
   visibility: hidden;
+  width: 280px;
  
 }
 
@@ -130,7 +135,8 @@ body {
 
 /* fondo del sidebar y dimensiones */
 .sidebar{
-  width: 200px;
+ 
+  width: 250px;
   height: 100%;
   background-color: gray;
   
@@ -166,6 +172,8 @@ body {
   font-size: 17px;
   font-family: sans-serif;
   text-shadow: 1px 1px 3px black;
+  display: flex;
+  align-items: center;
 
 }
 /* Se ajusta el margen superior del inicio de la opciones */
@@ -187,9 +195,44 @@ button{
   margin-left: 10px;
 }
 
-/* no mostrar sidebar si no se le da click al ícno  */
+/* Recuadro parte 2 del sidebar */
+.Part2{
+  padding-top: 20px ;
+  padding-bottom: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: rgb(213, 209, 209) ;
+  border-bottom-color: rgb(213, 209, 209) ;
+  
+}
+/* Títulos principales sidebar */
+h4{
+  margin-left:10px;
+  padding-bottom: 10px ;
+
+  font-size: 15px;
+  color:white;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* Configuración ícono sidebar */
+
+#IconoSB{
+  padding-right: 12px;
+}
+/* no mostrar sidebar si no se le da click al ícono  */
 #btn-menu{
   display: none;
+ 
+}
+
+/* Ajuste imagenes sidebar de suscripciones */
+.ImgSB{
+  border-radius: 100%;
+  padding-right: 12px;
+  width: 40px;
+  
 }
 
 /* Finaliza ajuste sidebar */
@@ -204,25 +247,37 @@ button{
 /* Ajuste posicionamiento de los videos con respecto al contenedor */
 
 .article {
-  margin-top: 80px;
+  margin-top: 200px;
   margin-left: 80px;
   grid-area: article;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   transition:0.8s ease;
+ 
   justify-content: center;
   align-items: center;
-  gap:40px;
+  gap:70px;
   align-content: space-around;
-  width: 1200px;
+  /* width: 1200px;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   
 }
 
+.art-item{
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+iframe{
+  width: 350px;
+  height: 200px;
+}
+
 /* Auste títulos de pie de video */
-.artitem h3{
+ .artitem h3{
   align-items: center;
   justify-content: center;
   margin: -10;
@@ -231,13 +286,13 @@ h3{
 
   font-size: medium;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto","Arial",sans-serif;
   text-shadow: 1px 1px 1px rgb(246, 241, 241);
   margin-left: -75px;
 }
-/* Finaliza ajuste videos */
+ Finaliza ajuste videos 
 
-.footer {
+ .footer {
   grid-area: footer;
   height: 100%;
   background-color: #d02424;
@@ -245,6 +300,7 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1200px; 
   margin-left: 40px;
-}
+}  
+
