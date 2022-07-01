@@ -8,9 +8,6 @@ body {
   width: 100vw;
   height: 100vh;
 
-  /* display: flex;
-  justify-content:center; */
-  
 
   flex-direction: column;
   display: grid;
@@ -106,7 +103,8 @@ body {
  
 }
 
-/* Border lupa */
+
+/* Contenedor de la  lupa */
 .ContenedorLupa{
   border-width: 1px;
   padding: 5px;
@@ -128,12 +126,13 @@ body {
 }
 
 
-
+/* Ícono del micrófono */
 .microfono{
   margin-left: 12px;
   font-size: 30px;
 }
 
+/* Configuración de íconos de la parte superior derecha del encabezado */
 .EncIconos{
   display: flex;
   flex-direction: row;
@@ -169,6 +168,7 @@ body {
   border-bottom: 4px solid #e8ee2d;
   padding-bottom: 15px;
 }
+/* Imagen de usuario */
 .ImgEnc{
   width: 40px;
   height: 40px;
@@ -186,6 +186,7 @@ body {
 /* Cierre encabezado */
 
 /* Inicio barra de opciones lateral */
+
 /* Ajuste de posición del contenedor */
 .container{
   /* position:fixed; */
