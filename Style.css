@@ -54,12 +54,6 @@ body {
 }
 
 /* Ajuste del menú del encabezado */
-.Contenedor .btn-menu label{
-  color: black;
-  font-size: 25px;
-  cursor: pointer;
-  
-}
 
 /* Ajuste posicionamieno del menú del encabezado */
 .Contenedor .menu{
@@ -69,23 +63,30 @@ body {
   flex-flow: row wrap;
   line-height: 10px;
   text-align: center;
+  width: 90%;
+  margin-top: 15px;
+  
 }
 /* Texto del menú de encabezado */
 .Contenedor .menu a{
   display: inline-block;
-  padding: 8px;
   line-height: normal;
   text-decoration: none;
   color: black;
-  
   transition: 0.3s ease;
-  border-bottom: 1px solid gray;
-  font-size: 15px;
-  margin-right: 4px;
+  border: 1px solid gray;
+  padding: 8px;
+  border-radius: 20px;
+  
+  font-size: 1rem;
   font-family: "Roboto","Arial",sans-serif;
 }
 
 /*´Posición barra de busqueda  */
+.SearchMenu{
+  margin-top: 15px;
+  
+}
 .search{
   display: flex;
   justify-content: center;
@@ -117,8 +118,6 @@ body {
 }
 
 @keyframes expandir {
- 
-
   10% {
     width: 2%;
     border: 1px solid;
@@ -280,7 +279,7 @@ h4{
 /* Ajuste posicionamiento de los videos con respecto al contenedor */
 
 .article {
-  margin-top:15px;
+  margin-top:30px;
   margin-bottom:50px;
   padding-left: 8%;
   padding-right: 10px;
@@ -346,13 +345,13 @@ h3{
   text-overflow: ellipsis;
   text-align: start;
   font-family: "Roboto","Arial",sans-serif;
-  text-shadow: 2px 2px 2px rgb(246, 241, 241);
+  text-shadow: 2px 2px 2px rgb(244, 226, 226);
   
 
 }
 
 .PieVideo Span {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: gray;
   font-weight: 500;
   font-family: "Roboto","Arial",sans-serif;
