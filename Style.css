@@ -100,9 +100,8 @@ body {
   justify-content: center;
   align-items:flex-start ;
   width: 500px;
-  height: 30px;
-  
-  
+  height: 40px;
+ 
 }
 
 /* Border lupa */
@@ -114,24 +113,37 @@ body {
   cursor: pointer;
   animation: expandir 2s 1s  alternate ease both;
   animation-iteration-count: 4;
+  font-size: 22px;
 
 }
 
 @keyframes expandir {
   10% {
-    width: 2%;
+    width: 4%;
     border: 1px solid;
     background-color: rgb(55, 53, 53);
   }
 }
 
-.notificaciones{
-  margin:20px;
 
+
+.microfono{
+  margin-left: 12px;
+  font-size: 30px;
 }
-.notificaciones:hover{
+
+.EncIconos{
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  justify-content: flex-end;
+ 
+}
+
+#bell:hover{
   border-bottom: 4px solid #e8ee2d;
   padding-bottom: 15px;
+  font-size: 20px;
 }
 
 /* aplicación del hover y ajuste del border de los botones del menú del encabezado */
@@ -158,6 +170,9 @@ body {
 }
 
 /* Aparecer menú lateral con el click  en el ícono*/
+.btn-menu{
+  font-size: 35px;
+}
 
 #btn-menu:checked ~ .container{
   opacity: 10;
@@ -336,7 +351,7 @@ iframe{
 
 }
 
-
+/* Ajuste de los títulos de los videos */
 h3{
   font-size: 1.2rem;
   white-space: normal;
@@ -349,7 +364,7 @@ h3{
   
 
 }
-
+/*Ajuste del span */
 .PieVideo Span {
   font-size: 1rem;
   color: gray;
