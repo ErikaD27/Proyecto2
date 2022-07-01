@@ -47,11 +47,7 @@ body {
   margin: 0;
   padding: 0;
   /* max-width: 1200px; */
-  
-  
 
-  
- 
 }
 
 /* Ajuste de posicionamiento logo y del menú encabzado */
@@ -254,7 +250,7 @@ h4{
 /* Ajuste posicionamiento de los videos con respecto al contenedor */
 
 .article {
-  margin-top:35px;
+  margin-top:15px;
   margin-bottom:20px;
   padding-left: 8%;
   padding-right: 10px;
@@ -264,7 +260,7 @@ h4{
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   transition:0.8s ease;
-  height: 400px;
+  height: 720px;
   gap:20px;
   align-content: space-around;
   width: 80%;
@@ -287,21 +283,53 @@ iframe{
 /* Auste títulos de pie de video */
  .artitem h3{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
  
+}
+/* Ajuste imágenes de creadores de contenido */
+
+.ImgVid{
+  width: 40px;
+  border-radius: 20px;
+ 
+}
+
+.PieVideo{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
 }
 
 
 h3{
-  font-size: medium;
-  text-align: center;
+  font-size: 1.2rem;
+  white-space: normal;
+  font-weight: 500;
+  max-height: 4.4rem;
+  text-overflow: ellipsis;
+  text-align: start;
   font-family: "Roboto","Arial",sans-serif;
   text-shadow: 1px 1px 1px rgb(246, 241, 241);
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+
+}
+
+.PieVideo Span {
+  font-size: 0.9rem;
+  color: gray;
+  font-weight: 500;
+  font-family: "Roboto","Arial",sans-serif;
+ 
+  
+ 
+  
 }
  /* Finaliza ajuste videos  */
 
