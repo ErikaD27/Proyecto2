@@ -21,11 +21,7 @@ body {
     "footer";
   gap: 10px;
  
-  /* background-image: url("./Background.gif") ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1200px 560px; */
- 
+  background-color: rgb(204, 200, 200);
  
 }
 
@@ -251,7 +247,7 @@ h4{
 
 .article {
   margin-top:15px;
-  margin-bottom:20px;
+  margin-bottom:50px;
   padding-left: 8%;
   padding-right: 10px;
   
@@ -316,7 +312,7 @@ h3{
   text-overflow: ellipsis;
   text-align: start;
   font-family: "Roboto","Arial",sans-serif;
-  text-shadow: 1px 1px 1px rgb(246, 241, 241);
+  text-shadow: 2px 2px 2px rgb(246, 241, 241);
   
 
 }
@@ -326,6 +322,7 @@ h3{
   color: gray;
   font-weight: 500;
   font-family: "Roboto","Arial",sans-serif;
+  text-shadow: 1px 1px 2px white;
  
   
  
@@ -334,6 +331,8 @@ h3{
  /* Finaliza ajuste videos  */
 
  .footer {
+  height: 100px;
+  margin-top: 10px;
   grid-area: footer;
   height: 100%;
   background-color: #d02424;
