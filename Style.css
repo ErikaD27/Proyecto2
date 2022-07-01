@@ -21,7 +21,7 @@ body {
     "footer";
   gap: 10px;
  
-  background-color: rgb(204, 200, 200);
+  background-color: rgb(204, 200, 200) ;
  
 }
 
@@ -86,10 +86,44 @@ body {
 }
 
 /*´Posición barra de busqueda  */
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+
+}
 #search{
   display: flex;
   justify-content: center;
   align-items:flex-start ;
+  width: 500px;
+  height: 30px;
+  
+  
+}
+
+/* Border lupa */
+.ContenedorLupa{
+  border-width: 1px;
+  padding: 5px;
+  border-style: solid;
+  border-color: black;
+  cursor: pointer;
+  animation: expandir 2s 1s  alternate ease both;
+  animation-iteration-count: 4;
+
+}
+
+@keyframes expandir {
+ 
+
+  10% {
+    width: 2%;
+    border: 1px solid;
+    background-color: rgb(55, 53, 53);
+  }
 }
 
 .notificaciones{
