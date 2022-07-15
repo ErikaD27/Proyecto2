@@ -111,8 +111,7 @@ body {
   border-style: solid;
   border-color: black;
   cursor: pointer;
-  animation: expandir 2s 1s  alternate ease both;
-  animation-iteration-count: 4;
+  animation: expandir 2s 1s alternate ease both ;
   font-size: 22px;
 
 }
